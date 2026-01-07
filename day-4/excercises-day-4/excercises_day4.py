@@ -57,3 +57,88 @@ print(company[10])
 sentence = 'Python For All'
 abbreviation = ''.join(word[0] for word in sentence.split())
 print(abbreviation)
+
+# Create an acronym or an abbreviation for the name 'Coding For All'
+sentence = 'Coding For All'
+abbreviation = ''.join(word[0] for word in sentence.split())
+print(abbreviation)
+
+# Use index to determine the position of the first occurrence of C in Coding For All.
+sentence = 'Coding For All'
+print(sentence.index('C'))
+
+# Use index to determine the position of the first occurrence of F in Coding For All.
+sentence = 'Coding For All'
+print(sentence.index('F'))
+
+#Use rfind to determine the position of the last occurrence of l in Coding For All People.
+sentence = 'Coding For All'
+print(sentence.rfind('l'))
+
+# Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+first_occurence = sentence.index('because')
+print(first_occurence)
+
+# Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+last_occurence = sentence.rindex('because')
+print(last_occurence)
+
+# Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+sliced_sentence = sentence[31:54]
+print(sliced_sentence)
+
+# Does ''Coding For All' start with a substring Coding?
+sentence = 'Coding For All'
+print(sentence.startswith('Coding'))
+
+# Does 'Coding For All' end with a substring coding?
+sentence = 'Coding For All'
+print(sentence.endswith('coding'))
+
+# '     Coding For All      '  , remove the left and right trailing spaces in the given string.
+sentence = '   Coding For All      '
+new_sentence = sentence.strip('     ')
+print(new_sentence)
+
+# Which one of the following variables return True when we use the method isidentifier():
+# 30DaysOfPython
+# thirty_days_of_python
+string1 = '30DaysOfPython'
+string2 = 'thrity_days_of_python'
+print(string1.isidentifier())
+print(string2.isidentifier())
+
+#The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print('# '.join(libraries))
+
+# Use the new line escape sequence to separate the following sentences.
+#I am enjoying this challenge.
+#I just wonder what is next.
+print('I am enjoying this challenge.\nI just wonder what is next.')
+
+#Use a tab escape sequence to write the following lines.
+#Name      Age     Country   City
+#Asabeneh  250     Finland   Helsinki
+print('Name\tAge\tCountry\tCity')
+print('Asabaneh\t250\tFinland\tHelsinki')
+
+# Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+print('The area of a circle with radius {} is {} meters square'.format(radius, area))
+
+#Make the following using string formatting methods:
+a = 8
+b = 6
+
+print("{} + {} = {}".format(a, b, a + b))
+print("{} - {} = {}".format(a, b, a - b))
+print("{} * {} = {}".format(a, b, a * b))
+print("{} / {} = {:.2f}".format(a, b, a / b))
+print("{} % {} = {}".format(a, b, a % b))
+print("{} // {} = {}".format(a, b, a // b))
+print("{} ** {} = {}".format(a, b, a ** b))
